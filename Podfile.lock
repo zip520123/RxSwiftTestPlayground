@@ -1,21 +1,31 @@
 PODS:
+  - Differentiator (3.1.0)
   - RxCocoa (4.3.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.3.0)
 
 DEPENDENCIES:
   - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
   - RxSwift (~> 4.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Differentiator
     - RxCocoa
+    - RxDataSources
     - RxSwift
 
 SPEC CHECKSUMS:
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   RxCocoa: 71b9cce833fbcb89a8eec11816dd225830c2bd3c
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
 
-PODFILE CHECKSUM: 172ef029bb45bf28c45cf337da0bc308d54dbde0
+PODFILE CHECKSUM: 3616fa4a2ec5398d5164896d9970ca0c83b49d51
 
 COCOAPODS: 1.5.0
