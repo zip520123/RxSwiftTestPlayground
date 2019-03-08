@@ -1,31 +1,84 @@
 PODS:
-  - Differentiator (3.1.0)
-  - RxCocoa (4.3.0):
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.13):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
+  - RxCocoa-Texture (2.2.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.3.0)
+    - Texture (~> 2.7)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - Texture (2.8):
+    - Texture/AssetsLibrary (= 2.8)
+    - Texture/Core (= 2.8)
+    - Texture/MapKit (= 2.8)
+    - Texture/Photos (= 2.8)
+    - Texture/PINRemoteImage (= 2.8)
+    - Texture/Video (= 2.8)
+  - Texture/AssetsLibrary (2.8):
+    - Texture/Core
+  - Texture/Core (2.8)
+  - Texture/MapKit (2.8):
+    - Texture/Core
+  - Texture/Photos (2.8):
+    - Texture/Core
+  - Texture/PINRemoteImage (2.8):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (2.8):
+    - Texture/Core
 
 DEPENDENCIES:
-  - RxCocoa (~> 4.0)
-  - RxDataSources (~> 3.0)
-  - RxSwift (~> 4.0)
+  - RxCocoa (~> 4.4)
+  - RxCocoa-Texture (from `https://github.com/RxSwiftCommunity/RxCocoa-Texture.git`, branch `Texture-2.7`)
+  - RxSwift (~> 4.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Differentiator
+  https://github.com/cocoapods/specs.git:
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - RxAtomic
     - RxCocoa
-    - RxDataSources
     - RxSwift
+    - Texture
+
+EXTERNAL SOURCES:
+  RxCocoa-Texture:
+    :branch: Texture-2.7
+    :git: https://github.com/RxSwiftCommunity/RxCocoa-Texture.git
+
+CHECKOUT OPTIONS:
+  RxCocoa-Texture:
+    :commit: f550c3673d656773caeac9dd2967a16d9d55e419
+    :git: https://github.com/RxSwiftCommunity/RxCocoa-Texture.git
 
 SPEC CHECKSUMS:
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  RxCocoa: 71b9cce833fbcb89a8eec11816dd225830c2bd3c
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxCocoa-Texture: d27c090ceff52f89ed70283603d1c6fd387ef42c
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  Texture: fc6e0157201f3a6e503d364c147b1872e365cef4
 
-PODFILE CHECKSUM: 3616fa4a2ec5398d5164896d9970ca0c83b49d51
+PODFILE CHECKSUM: c523f41c440e9ee279cc859cb99c16b452280e40
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

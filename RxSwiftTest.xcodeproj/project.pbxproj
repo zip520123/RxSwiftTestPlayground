@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A1592C62D61FF4F7A878E61 /* Pods_RxSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C62A42C1C0FF882AE37752C /* Pods_RxSwiftTest.framework */; };
 		E02C213259FDB51B7DD63779 /* Pods_AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC2D1331859245DBD3D2ACB /* Pods_AppFramework.framework */; };
+		E7EE1B0A22322CB500BA72F9 /* RxSwiftTest.app in Resources */ = {isa = PBXBuildFile; fileRef = EF322E962152244A00C3A2CA /* RxSwiftTest.app */; };
 		EF322E9A2152244A00C3A2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF322E992152244A00C3A2CA /* AppDelegate.swift */; };
 		EF322E9C2152244A00C3A2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF322E9B2152244A00C3A2CA /* ViewController.swift */; };
 		EF322E9F2152244A00C3A2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF322E9D2152244A00C3A2CA /* Main.storyboard */; };
@@ -16,34 +17,8 @@
 		EF322EA42152244B00C3A2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF322EA22152244B00C3A2CA /* LaunchScreen.storyboard */; };
 		EF322EBF215381F500C3A2CA /* VCforRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF322EBE215381F500C3A2CA /* VCforRx.swift */; };
 		EF322EDA215382A400C3A2CA /* AppFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EF322ED8215382A400C3A2CA /* AppFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF322EDD215382A400C3A2CA /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF322ED6215382A400C3A2CA /* AppFramework.framework */; };
-		EF322EDE215382A400C3A2CA /* AppFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF322ED6215382A400C3A2CA /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF322EE22153834700C3A2CA /* VCforRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF322EBE215381F500C3A2CA /* VCforRx.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EF322EDB215382A400C3A2CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EF322E8E2152244A00C3A2CA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF322ED5215382A400C3A2CA;
-			remoteInfo = AppFramework;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EF322EBD21537D6C00C3A2CA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EF322EDE215382A400C3A2CA /* AppFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0281D583BA04E096C8467C9C /* Pods-AppFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppFramework/Pods-AppFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1592C62D61FF4F7A878E61 /* Pods_RxSwiftTest.framework in Frameworks */,
-				EF322EDD215382A400C3A2CA /* AppFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +146,10 @@
 				EF322E932152244A00C3A2CA /* Frameworks */,
 				EF322E942152244A00C3A2CA /* Resources */,
 				B04BD42F2D7CA16E63D750E0 /* [CP] Embed Pods Frameworks */,
-				EF322EBD21537D6C00C3A2CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EF322EDC215382A400C3A2CA /* PBXTargetDependency */,
 			);
 			name = RxSwiftTest;
 			productName = RxSwiftTest;
@@ -255,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EE1B0A22322CB500BA72F9 /* RxSwiftTest.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,24 +258,30 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS10.3/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS10.3/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS11.3/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS11.3/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-Texture/RxCocoa_Texture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa_Texture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4A641FCA94BCD54D989DBAD /* [CP] Check Pods Manifest.lock */ = {
@@ -345,14 +324,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EF322EDC215382A400C3A2CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EF322ED5215382A400C3A2CA /* AppFramework */;
-			targetProxy = EF322EDB215382A400C3A2CA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF322E9D2152244A00C3A2CA /* Main.storyboard */ = {
@@ -492,7 +463,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 400999828ECB0A6C2800CCDA /* Pods-RxSwiftTest.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCLCJ9X7RB;
@@ -513,7 +483,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 695AD4E0EA8D6743D7D04A39 /* Pods-RxSwiftTest.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCLCJ9X7RB;

@@ -1,18 +1,20 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+
+platform :ios, '10.0'
+
+def rx_pods
+    pod 'RxSwift', '~> 4.4'
+    pod 'RxCocoa', '~> 4.4'
+    pod 'RxCocoa-Texture', :git => 'https://github.com/RxSwiftCommunity/RxCocoa-Texture.git', :branch => 'Texture-2.7'
+end
+
 
 target 'RxSwiftTest' do
   use_frameworks!
-
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
-  pod 'RxDataSources', '~> 3.0'
+  rx_pods
 end
 target 'AppFramework' do
   use_frameworks!
-
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  rx_pods
 end
 
 
