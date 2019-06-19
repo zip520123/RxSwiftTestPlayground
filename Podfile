@@ -5,6 +5,7 @@ def rx_pods
     pod 'RxSwift', '~> 4.4'
     pod 'RxCocoa', '~> 4.4'
     pod 'RxCocoa-Texture', :git => 'https://github.com/RxSwiftCommunity/RxCocoa-Texture.git', :branch => 'Texture-2.7'
+    pod 'SnapKit', '~> 4.2'
 end
 
 

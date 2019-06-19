@@ -23,6 +23,7 @@ PODS:
     - Texture (~> 2.7)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
+  - SnapKit (4.2.0)
   - Texture (2.8):
     - Texture/AssetsLibrary (= 2.8)
     - Texture/Core (= 2.8)
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - RxCocoa (~> 4.4)
   - RxCocoa-Texture (from `https://github.com/RxSwiftCommunity/RxCocoa-Texture.git`, branch `Texture-2.7`)
   - RxSwift (~> 4.4)
+  - SnapKit (~> 4.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -57,6 +59,7 @@ SPEC REPOS:
     - RxAtomic
     - RxCocoa
     - RxSwift
+    - SnapKit
     - Texture
 
 EXTERNAL SOURCES:
@@ -77,8 +80,9 @@ SPEC CHECKSUMS:
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxCocoa-Texture: d27c090ceff52f89ed70283603d1c6fd387ef42c
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Texture: fc6e0157201f3a6e503d364c147b1872e365cef4
 
-PODFILE CHECKSUM: c523f41c440e9ee279cc859cb99c16b452280e40
+PODFILE CHECKSUM: 674ee9cf4af755e20a18c41ada02043cb4db6491
 
 COCOAPODS: 1.6.1

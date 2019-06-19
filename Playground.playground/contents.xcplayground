@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='5.0' target-platform='ios'>
-    <timeline fileName='timeline.xctimeline'/>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='RxPlayground'/>
+        <page name='articles_featured'/>
+        <page name='resetSuccessPasswordData'/>
+        <page name='index_Slider'/>
+        <page name='GradientLayer'/>
+        <page name='swift version'/>
+        <page name='tableView_in_tableView'/>
+        <page name='LastProject'/>
+        <page name='CollectedArticlesModel'/>
+        <page name='shadow_radius'/>
+        <page name='string'/>
+        <page name='zip'/>
+        <page name='Texture'/>
+        <page name='RxVC'/>
+        <page name='url'/>
+        <page name='extension'/>
+        <page name='DynamicTableViewCell'/>
+    </pages>
 </playground>
