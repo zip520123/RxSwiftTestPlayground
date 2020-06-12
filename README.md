@@ -43,9 +43,11 @@ end
 $ pod install
 ```
 12. Select AppFramework and iPhone 7 simulator build once (important)
-13. import AppFramework in playground page
+13. import AppFramework and pods in playground page
 ```swift
 import AppFramework
+import RxSwift
+import RxCocoa
 ```
 14. Done. We can use class in playground for test! Remember we must rebuild AppFramework target after we modify any class.
 
